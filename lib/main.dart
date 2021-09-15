@@ -29,8 +29,8 @@ class MyApp extends StatelessWidget {
 
 
 
-
-class MyHomePage extends StatelessWidget {
+//4.2.9 AppBar, TabBar, Tab, TabBarView
+/*class MyHomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     // TODO: implement build
@@ -60,9 +60,354 @@ class MyHomePage extends StatelessWidget {
       ),
     );
   }
+}*/
+
+//4.2.10 BottomNavigationBar
+/*class MyHomePage extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    // TODO: implement build
+
+    return Scaffold(
+        appBar: AppBar(
+          title: Text('4.2.10 BottomNavigationBar'),
+        ),
+      bottomNavigationBar: BottomNavigationBar(items:[
+        BottomNavigationBarItem(
+          icon: Icon(Icons.home),
+          title: Text('Home'),
+    ),
+        BottomNavigationBarItem(
+          icon: Icon(Icons.person),
+          title: Text('Profile'),
+        ),
+        BottomNavigationBarItem(
+          icon: Icon(Icons.notifications),
+          title: Text('Notification'),
+        ),
+      ]),
+
+    );
+  }
+}*/
+
+//4.3.1 Center
+/*class MyHomePage extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar : AppBar(
+        title: Text('Center'),
+      ),
+      body:Center(
+        child: Container(
+          color: Colors.red,
+            width: 100,
+            height: 100,
+        )),
+      );
+  }
 }
+*/
+//4.3.2 Padding
+/*class MyHomePage extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('Padding'),
+      ),
+      body: Padding(
+        padding: const EdgeInsets.all(40.0),
+        child:Container(
+          color: Colors.red,
+        ),
+      ),
+    );
+  }
+}
+*/
+/*4.3.3 Align
+class MyHomePage extends StatelessWidget {
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('Align'),
+      ),
+      body: Align(
+        alignment: Alignment.bottomRight,
+        child:Container(
+          color: Colors.red,
+          width: 100,
+          height: 100,
+        ),
+      ),
+    );
+  }
+}
+<<<<<<< HEAD
+*/
+/*4.3.4 Expanded
+class MyHomePage extends StatelessWidget {
+=======
 
 
+>>>>>>> parent of f2f6355 (flutter_app01)
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('Expanded'),
+      ),
+      body:Column(
+        children: <Widget>[
+          Expanded(
+        flex:2,
+      child: Container(
+        color: Colors.red,
+      ),
+    ),
+    Expanded(
+      flex: 2,
+    child:Container(
+    color: Colors.green,
+    ),
+    ),
+    Expanded(
+    child:Container(
+    color: Colors.blue,
+    ),
+    ),
+        ],
+    ),
+    );
+  }
+}
+*/
+/*4.3.5 SizedBox
+
+class MyHomePage extends StatelessWidget {
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('SizedBox'),
+      ),
+      body: SizedBox(
+        width: 100,
+        height: 100,
+        child: Container(
+          color: Colors.red,
+        ),
+      ),
+    );
+  }
+}*/
+
+/*4.3.6 Card
+
+class MyHomePage extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('Card'),
+      ),
+      body: Center(
+      child:Card(
+        shape:RoundedRectangleBorder(
+          borderRadius: BorderRadius.circular(16.0),
+        ),
+
+      elevation:4.0,
+            child:Container(
+            width: 200,
+            height: 200,
+            ),
+        ),
+      ),
+    );
+  }
+}*/
+
+/*4.4.1 RaisedButton
+
+class MyHomePage extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('RaisedButton'),
+      ),
+      body: Center(
+        child: RaisedButton(
+          child:Text('RaisdButton'),
+          color:Colors.orange,
+          onPressed: (){},
+        ),
+      ),
+    );
+  }
+}
+*/
+
+
+/*4.4.2 FlatButton
+
+class MyHomePage extends StatelessWidget {
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('FlatButton'),
+      ),
+      body: Center(
+        child: FlatButton(
+          child: Text('FlatButton'),
+          onPressed: (){},
+        ),
+      ),
+    );
+  }
+}
+*/
+
+/*4.4.3 IconButton
+
+class MyHomePage extends StatelessWidget {
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('IconButton'),
+      ),
+      body: Center(
+        child: IconButton(
+          icon: Icon(Icons.add),
+          color: Colors.red,
+          iconSize: 100.0,
+          onPressed: (){},
+        ),
+      ),
+    );
+  }
+}
+*/
+
+
+/*4.5.1 Text
+
+class MyHomePage extends StatelessWidget {
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('Text'),
+      ),
+      body: Center(
+        child: Text(
+            'Hellow World',
+            style: TextStyle(
+            fontSize: 40.0,               //글자크기
+          fontStyle: FontStyle.italic,    //이탤릭체
+          fontWeight: FontWeight.bold,    //볼드체
+          color: Colors.red,              //색상
+          letterSpacing: 4.0,             //자간
+       ),
+        ),
+
+      ),
+    );
+  }
+}
+*/
+
+/*4.5.2 Image
+
+class MyHomePage extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('Image'),
+      ),
+      body:Center(
+        child:  Image.network('http://bit.ly/2Pvz4t8'),
+      ),
+
+    );
+  }
+}
+*/
+
+
+/*4.5.3 Icon
+
+class MyHomePage extends StatelessWidget {
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('Icon'),
+      ),
+      body: Center(
+        child: Icon(
+          Icons.home,
+          color: Colors.blue,
+          size: 60.0,
+        ),
+      ),
+    );
+  }
+}
+*/
+
+/*4.5.4 Progress
+
+class MyHomePage extends StatelessWidget {
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('Progress'),
+      ),
+      body: Center(
+        child: CircularProgressIndicator(),
+        //child: LinearProgressIndicator(),
+      ),
+    );
+  }
+}
+*/
+
+//4.5.5 CircleAvatar
+
+class MyHomePage extends StatelessWidget {
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('CircleAvator'),
+      ),
+      body: Center(
+        child: CircleAvatar(
+         child: Icon(Icons.person),
+        //backgroundImage:NetworkImage([이미지]),
+        ),
+      ),
+    );
+  }
+}
 
 
 
